@@ -17,6 +17,16 @@ class FragmentNumber2 : Fragment() {
         return inflater.inflate(R.layout.fragment_number2, container, false)
     }
 
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+    }
+
+    override fun onResume() {
+        super.onResume()
+        showToast("Hello Fragment2")
+    }
+
     companion object {
 
         @JvmStatic
